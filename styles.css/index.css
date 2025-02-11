@@ -12,6 +12,11 @@
   justify-content: space-between;
   padding: 10px;
 }
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
 #homeLink,
 #featuresLink,
 #aboutLink {
@@ -26,10 +31,10 @@
   border: none;
 }
 #loginBtn {
-  background-color: rgb(238, 240, 241);
+  background-color: #fff;
 }
 #signupBtn {
-  background-color: yellow;
+  background-color: #FFE4B5;
 }
 .hero {
   background-color: #f8f9fa;
@@ -43,8 +48,10 @@
 }
 #heroText {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 #startLearningBtn {
+  margin-top: 5px;
   background-color: #1a73e8;
   color: white;
   padding: 12px 30px;
