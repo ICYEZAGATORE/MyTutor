@@ -7,6 +7,9 @@
 #mainNav {
   background-color: #1a73e8;
 }
+.nav-links{
+  display: none;
+}
 .nav-content {
   display: flex;
   justify-content: space-between;
