@@ -1,21 +1,16 @@
-// File: /JS/index.js
+document.addEventListener("DOMContentLoaded", () => {
+  const loginBtn = document.getElementById("loginBtn");
+  const signupBtn = document.getElementById("signupBtn");
 
-document.getElementById("loginBtn").addEventListener("click", () => {
-  window.location.href = "login.html";
-});
+  if (loginBtn) {
+    loginBtn.addEventListener("click", () => {
+      window.location.href = "login.html"; // ✅ Correct path
+    });
+  }
 
-document.getElementById("signupBtn").addEventListener("click", () => {
-  window.location.href = "signup.html";
-});
-
-document.getElementById("submitLogin").addEventListener("click", (e) => {
-  e.preventDefault();
-  // Add login logic here
-  alert("Login successful!");
-});
-
-document.getElementById("submitSignup").addEventListener("click", (e) => {
-  e.preventDefault();
-  // Add signup logic here
-  alert("Sign up successful!");
+  if (signupBtn) {
+    signupBtn.addEventListener("click", () => {
+      window.location.href = "signup.html"; // ✅ Correct path
+    });
+  }
 });
