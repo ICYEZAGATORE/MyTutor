@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="/Styles/index.css">
     <script src="../JS/index.js"></script>
 </head>
@@ -23,31 +23,21 @@
             </div>
         </div>
     </nav>
-  <!-- Hero Section -->
-    <section class="hero" id="heroSection">
-        <h1 id="mainHeading">Learn Anywhere, Anytime</h1>
-        <p id="heroText">Access quality education resources and improve your skills with MyTutor</p>
-        <button id="startLearningBtn">Start Learning Now</button>
+
+    <!-- Sign Up Section -->
+    <section class="signup" id="signupSection">
+        <h2>Create a New Account</h2>
+        <form id="signupForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" id="submitSignup">Sign Up</button>
+        </form>
     </section>
 
-    <!-- Features Section -->
-    <section class="features" id="featuresSection">
-        <h2>Our Features</h2>
-        <div class="feature-grid">
-            <div class="feature-card" id="feature1">
-                <h3>Interactive Learning</h3>
-                <p>Engage with quizzes and interactive content</p>
-            </div>
-            <div class="feature-card" id="feature2">
-                <h3>Track Progress</h3>
-                <p>Monitor your learning journey</p>
-            </div>
-            <div class="feature-card" id="feature3">
-                <h3>Study Offline</h3>
-                <p>Learn without internet (Coming Soon)</p>
-            </div>
-        </div>
-    </section>
     <!-- Footer -->
     <footer id="mainFooter">
         <p>Contact us at: <span id="contactEmail">info@mytutor.com</span></p>
