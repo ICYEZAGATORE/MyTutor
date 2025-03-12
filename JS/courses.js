@@ -46,6 +46,16 @@ document.addEventListener("DOMContentLoaded", () => {
     coursesContainer.appendChild(courseCard);
   });
 
+  // Handle course click - Redirect to lesson page
+  if (coursesContainer) {
+    coursesContainer.addEventListener("click", (event) => {
+      const target = event.target.closest(".course-card");
+      if (target) {
+        window.location.href = "lesson.html"; // Redirect to lesson page
+      }
+    });
+  }
+
   // Logout functionality
   if (logoutBtn) {
     logoutBtn.addEventListener("click", () => {
