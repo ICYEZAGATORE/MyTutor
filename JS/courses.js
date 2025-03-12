@@ -1,37 +1,56 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Handle Login Form Submission
-  const loginForm = document.getElementById("loginForm");
-  if (loginForm) {
-    loginForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      alert("Login Successful!");
-      window.location.href = "courses.html"; // Redirect to courses
-    });
-  }
+  const coursesContainer = document.getElementById("coursesContainer");
+  const logoutBtn = document.getElementById("logoutBtn");
 
-  // Handle Signup Form Submission
-  const signupForm = document.getElementById("signupForm");
-  if (signupForm) {
-    signupForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      alert("Sign Up Successful!");
-      window.location.href = "courses.html"; // Redirect to courses
-    });
-  }
+  // Course data
+  const courses = [
+    {
+      title: "Coding 101",
+      description: "Learn the basics of programming.",
+      image: "../Assets/coding-101.jpg",
+    },
+    {
+      title: "Financial Literacy",
+      description: "Master financial skills and budgeting.",
+      image: "../Assets/financial-literacy.jpg",
+    },
+    {
+      title: "Math - Integrals",
+      description: "Understand integral calculus step by step.",
+      image: "../Assets/math-integrals.jpg",
+    },
+    {
+      title: "Entrepreneurship",
+      description: "Build and grow your own business.",
+      image: "../Assets/entrepreneurship.jpg",
+    },
+    {
+      title: "Public Speaking 101",
+      description: "Improve your communication and speech skills.",
+      image: "../Assets/public-speaking.jpg",
+    },
+  ];
 
-  // Handle Navigation Button Clicks
-  const loginBtn = document.getElementById("loginBtn");
-  const signupBtn = document.getElementById("signupBtn");
+  // Populate courses dynamically
+  courses.forEach((course) => {
+    const courseCard = document.createElement("div");
+    courseCard.classList.add("course-card");
 
-  if (loginBtn) {
-    loginBtn.addEventListener("click", () => {
-      window.location.href = "login.html"; // Ensure correct path
-    });
-  }
+    courseCard.innerHTML = `
+            <img src="${course.image}" alt="${course.title}">
+            <h3>${course.title}</h3>
+            <p>${course.description}</p>
+            <button class="enroll-btn">Enroll Now</button>
+        `;
 
-  if (signupBtn) {
-    signupBtn.addEventListener("click", () => {
-      window.location.href = "signup.html"; // Ensure correct path
+    coursesContainer.appendChild(courseCard);
+  });
+
+  // Logout functionality
+  if (logoutBtn) {
+    logoutBtn.addEventListener("click", () => {
+      alert("You have been logged out.");
+      window.location.href = "login.html";
     });
   }
 });
