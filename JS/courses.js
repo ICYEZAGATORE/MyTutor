@@ -8,31 +8,31 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Coding 101",
       description: "Learn the basics of programming.",
       image: "../Images/coding-101.jpg",
-      link: "lesson.html", // Stay linked to the generic lesson page
+      link: "coding-101.html", // ✅ Updated to Coding 101's specific page
     },
     {
       title: "Financial Literacy",
       description: "Master financial skills and budgeting.",
       image: "../Images/financial-literacy.jpg",
-      link: "financial-literacy.html", // Link to Financial Literacy specific page
+      link: "financial-literacy.html",
     },
     {
       title: "Math - Integrals",
       description: "Understand integral calculus step by step.",
       image: "../Images/math-integrals.jpg",
-      link: "lesson.html", // Stay linked to the generic lesson page
+      link: "lesson.html",
     },
     {
       title: "Entrepreneurship",
       description: "Build and grow your own business.",
       image: "../Images/entrepreneurship.jpg",
-      link: "lesson.html", // Stay linked to the generic lesson page
+      link: "lesson.html",
     },
     {
       title: "Public Speaking 101",
       description: "Improve your communication and speech skills.",
       image: "../Images/public-speaking.jpg",
-      link: "lesson.html", // Stay linked to the generic lesson page
+      link: "lesson.html",
     },
   ];
 
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (logoutBtn) {
     logoutBtn.addEventListener("click", () => {
       alert("You have been logged out.");
-      window.location.href = "login.html"; // Correct path since `login.html` is inside `HTML/`
+      window.location.href = "login.html";
     });
   }
 });
