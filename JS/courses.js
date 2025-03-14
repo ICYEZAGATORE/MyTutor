@@ -7,27 +7,27 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Coding 101",
       description: "Learn the basics of programming.",
-      image: "../Assets/coding-101.jpg",
+      image: "../Images/coding-101.jpg", // ✅ Ensure correct path
     },
     {
       title: "Financial Literacy",
       description: "Master financial skills and budgeting.",
-      image: "../Assets/financial-literacy.jpg",
+      image: "../Images/financial-literacy.jpg", // ✅ Ensure correct path
     },
     {
       title: "Math - Integrals",
       description: "Understand integral calculus step by step.",
-      image: "../Assets/math-integrals.jpg",
+      image: "../Images/math-integrals.jpg", // ✅ Ensure correct path
     },
     {
       title: "Entrepreneurship",
       description: "Build and grow your own business.",
-      image: "../Assets/entrepreneurship.jpg",
+      image: "../Images/entrepreneurship.jpg", // ✅ Ensure correct path
     },
     {
       title: "Public Speaking 101",
       description: "Improve your communication and speech skills.",
-      image: "../Assets/public-speaking.jpg",
+      image: "../Images/public-speaking.jpg", // ✅ Ensure correct path
     },
   ];
 
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     coursesContainer.addEventListener("click", (event) => {
       const target = event.target.closest(".course-card");
       if (target) {
-        window.location.href = "lesson.html"; // Redirect to lesson page
+        window.location.href = "lesson.html"; // ✅ Correct path since `lesson.html` is inside `HTML/`
       }
     });
   }
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (logoutBtn) {
     logoutBtn.addEventListener("click", () => {
       alert("You have been logged out.");
-      window.location.href = "login.html";
+      window.location.href = "login.html"; // ✅ Correct path since `login.html` is inside `HTML/`
     });
   }
 });

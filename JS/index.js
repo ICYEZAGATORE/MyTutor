@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loginForm.addEventListener("submit", (e) => {
       e.preventDefault();
       alert("Login Successful!");
-      window.location.href = "courses.html"; // Redirect to courses
+      window.location.href = "../HTML/courses.html"; // ✅ Adjusted path
     });
   }
 
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     signupForm.addEventListener("submit", (e) => {
       e.preventDefault();
       alert("Sign Up Successful!");
-      window.location.href = "courses.html"; // Redirect to courses
+      window.location.href = "../HTML/courses.html"; // ✅ Adjusted path
     });
   }
 
@@ -25,13 +25,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (loginBtn) {
     loginBtn.addEventListener("click", () => {
-      window.location.href = "login.html"; // Ensure correct path
+      window.location.href = "../HTML/login.html"; // ✅ Corrected path
     });
   }
 
   if (signupBtn) {
     signupBtn.addEventListener("click", () => {
-      window.location.href = "signup.html"; // Ensure correct path
+      window.location.href = "../HTML/signup.html"; // ✅ Corrected path
     });
   }
 });
